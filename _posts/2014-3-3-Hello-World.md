@@ -27,5 +27,4 @@ For a better understanding of RNNs and LSTMs (A form of RNNs), you can also read
 
 The concept can be extended to deciding architectures for other fields like Computer Vision as well.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
 
