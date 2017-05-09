@@ -12,7 +12,7 @@ A neural network typically involves a sequence(2 or more) of layers starting fro
 To have "learnable parameters", the weights in a neural network, is like teaching a child to slowly learn and recognize the objects and environment around it. Or, a more related mathematical anology would be to have a blind man walk down a mountain range (called the error surface) and reach the lowest point (the point of ~~no return~~ least error).  
 
 __What is the intuition for coming up with a new neural network architecture?__  
-The intuition I wanted to convey being that, neural networks store all the ***information about the input***, that we would like it to remember when its making a decision about a new input in the future. And this information is stored as weights. Weights hold the memory representative and power of a network.    
+The intuition I wanted to convey being that, neural networks store all the ***information about the input***, that we would like it to remember when its making a decision about a new input in the future. And this information is stored as weights. Weights hold the memory and representative power of a network.    
 This maybe relatively straightforward when we are considering a network learning for a particular task, but how do we come up with an architecture for a new task at hand? How do we choose the number of weights and layers that are sufficient to classify points in a new dataset? 
 
 As an example, consider a Language processing task. Suppose that we were given a sentence in German and asked to predict the correct corresponding sentence in English. How would we like your network to interpret the input sentence?  
