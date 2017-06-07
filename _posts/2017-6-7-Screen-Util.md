@@ -1,4 +1,4 @@
-## Why you should be using screen
+#### Why you should be using screen
 
 Very few developers use the ```screen``` utility that is available in all *nix systems
 
@@ -6,9 +6,10 @@ Very few developers use the ```screen``` utility that is available in all *nix s
 - Mitigate the problem of having multiple ssh sessions!
 - Name your sessions according to work and create away!
 
-#### Cheat sheet:
+#### Cheat sheet
 
 ```Ctrl-A + Ctrl-D ``` - Detach  
+
 ```Ctrl-A + Esc ``` - Copy mode / Scroll 
 
 ```
