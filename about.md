@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Computer Science student at IIT Hyderabad.
+Graduate student in Computer Science at Cornell University. Past: @grafana, @media.net, @IIT-H
 
 ### Contact me
 
-[Email](mailto:cs14btech11001@iith.ac.in)  
-[Twitter](www.twitter.com/annanay25)
+[Email](mailto:annanayagarwal@gmail.com)  
+[Twitter](www.twitter.com/mrannanay)
