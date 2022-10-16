@@ -1,0 +1,11 @@
+---
+layout: page
+permalink: /personal/
+title: personal reflections and patterns
+---
+
+<div id="archives">
+{% for post in site.categories.personal %}
+ <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
