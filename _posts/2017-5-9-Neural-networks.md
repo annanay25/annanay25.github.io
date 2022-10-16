@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ideas from a caffienated neural network.
+categories: tech
 ---
 
 With AI becoming the latest buzzword in the Computer Science community, it is becoming important, in all areas of computer science, to incorporate concepts from Machine Learning into our workspace. New use cases are emerging for applications of Aritificial Intelligence in biomedical industries, pedestrian detection systems, synthesizing music, etc. How do we construct a neural network that performs a new task?
