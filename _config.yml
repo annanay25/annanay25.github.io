@@ -6,10 +6,10 @@
 name: Annanay Agarwal
 
 # Short bio or description (displayed in the header)
-description: Bachelor in Computer Science
+description: Masters student in Computer Science at Cornell University
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/598564713446813696/UOjYvEnm.jpg
+avatar: https://pbs.twimg.com/profile_images/1496197270739447808/J2hZGvUc_400x400.jpg
 
 #
 # Flags below are optional
@@ -26,7 +26,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: annanay25
+  twitter: mrannanay
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
