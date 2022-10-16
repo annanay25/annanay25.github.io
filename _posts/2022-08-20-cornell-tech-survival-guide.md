@@ -4,9 +4,6 @@ title: Cornell Tech Survival Guide.
 categories: personal
 ---
 
-
-# Cornell Tech Survival Guide
-
 Welcome to the CTSG. 🚀
 
 This is a dynamic document that will be updated through the year with activity highlights of the 2022 batch, and will (hopefully) live on to serve the future batches. It will be a collective contribution of the batch and aim to include the best experiences from everyone.
