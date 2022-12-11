@@ -19,7 +19,7 @@ Course content available as a [YouTube Playlist](https://www.youtube.com/watch?v
 Summary slide borrowed from the lectures.
 
 1. Machine Learning Engineering - Building and scaling a Machine Learning framework - MiniTorch (set to mimic PyTorch).
-Course content available at https://minitorch.github.io/.
+Course content available at [https://minitorch.github.io/](https://minitorch.github.io/).
 
 Finally, the neural networks we built are able to draw boundary lines between points like this, which is surprisingly hard to do!
 
@@ -46,9 +46,7 @@ Obviously I had to ask ChatGPT about the Studio program at Cornell Tech, here's 
 1. SnowFlake Cloud Data Summit - Great place, great energy, lots of folks working in the cloud data storage space. And of course, great swag! 😄 Mandatory [tweet](https://twitter.com/mrannanay/status/1575114449593065475) during the conference.
 
 2. NYC Tech Week - An array of networking events spread through some great locations throughout the city. 
-
-Very interesting backstory on Capital and how the company organized the Tech Week - https://www.notboring.co/p/capital-and-taste. 
-
-[Memories](https://twitter.com/mrannanay/status/1579630795714883584) bring back [memories](https://twitter.com/mrannanay/status/1579992300511723521) bring back ....
+Very interesting backstory on Capital and how the company organized the Tech Week - [https://www.notboring.co/p/capital-and-taste](https://www.notboring.co/p/capital-and-taste). Tweets from the event - 
+[memories](https://twitter.com/mrannanay/status/1579630795714883584) bring back [memories](https://twitter.com/mrannanay/status/1579992300511723521) bring back ....
 
 Thanks for reading!
