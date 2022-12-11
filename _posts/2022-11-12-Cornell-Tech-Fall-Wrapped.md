@@ -18,6 +18,8 @@ Course content available as a [YouTube Playlist](https://www.youtube.com/watch?v
 1. Machine Learning Engineering - Building and scaling a Machine Learning framework - MiniTorch (set to mimic PyTorch).
 Course content available at https://minitorch.github.io/. Learnt that its surprisingly hard to separate points like this!
 
+![mle-summary](../images/mle-summary.png)
+
 1. Cryptography - Deep dive into the state of the art Cryptographic primitives. Course content can be found on [Github](https://github.com/tomrist/cs5830-fall2022/tree/main). 
 
 ![crypto-summary](../images/crypto-summary.png)
