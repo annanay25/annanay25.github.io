@@ -20,4 +20,6 @@ Without further ado, a list of the best at Cornell Tech in roughly chronological
 
 - Visit Central Park, Times Square and the Washington State Park - some have even done this on foot.
 - Use the Roosevelt Island Red Bus - its free and the fastest way to get around the island
-- 
+
+Indian stores near campus
+- Patel Brothers in Queens (https://goo.gl/maps/9MheiCAbnRQ4rQ95A)
