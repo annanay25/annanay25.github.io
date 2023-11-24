@@ -18,9 +18,13 @@ Without further ado, a list of the best at Cornell Tech in roughly chronological
 
 ![Cornell Tech Classroom View](../../images/cornell-tech-classroom-view.jpeg)
 
-- Visit Central Park, Times Square and the Washington State Park - some have even done this on foot.
+- Visit Central Park, Times Square and the Washington State Park.
 - Use the Roosevelt Island Red Bus - its free and the fastest way to get around the island
 - 'Window shop for courses' - attend the first few classes for all courses your interested in to see if you really like the course content and the teaching style of the professor.
 
 Indian stores near campus
 - Patel Brothers in Queens (https://goo.gl/maps/9MheiCAbnRQ4rQ95A)
+
+Bowling alleys in queens. 
+
+
