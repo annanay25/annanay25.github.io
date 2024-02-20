@@ -10,24 +10,39 @@ and a few at the bottom of this list that can be implemented by company leadersh
 ### Processes and Reliability
 Ship fewer things, improve the quality of existing pieces - Learnt this from my (then) manager [David Kitchen](https://www.linkedin.com/in/deekitchen). If you need other tweets as validation, [here's one](https://twitter.com/amasad/status/1488713434208169986) from Amjad Masad:
 ![Amjad Masad Tweet](../../images/amjad_tweet.png)
-Before you pick something new to work on, check whether there are existing pieces that are slowing the team down. Focus on the small things - automated deployments, a fast CI pipeline, a flaky alert that wakes engineers up at night? Investing in processes and refining them pays dividends in the long run.
-In the Tempo squad (of 7 people) we started out with manual releases for the single ops and prod cluster we used to run, and today we’re managing ~10 production clusters all through weekly release automations. This is an example of the PRs our internal release bot creates:
+
+Before you pick something new to work on, check whether there are existing pieces that are slowing the team down. Focus on the small things - automated deployments, a fast CI pipeline, a flaky alert that wakes engineers up at night? Investing in processes and refining them pays dividends in the long run. In the Tempo squad (of 7 people) we started out with manual releases for the single ops and prod cluster we used to run, and today we’re managing ~10 production clusters all through weekly release automations. This is an example of the PRs our internal release bot creates:
 ![Tempo Rollout PRs](../../images/tempo_rollout_prs_1.png)
+
 And the clusters we are able to manage with this kind of setup:
 ![Tempo Clusters (old screenshot, there are 20+ Tempo clusters today)](../../images/tempo_rollout_prs_2.png)
-Credit to Koenraad Verheyden for setting this up for us!
+
+Tempo Clusters (old screenshot, there are 20+ Tempo clusters today.
+
+Credit to _Koenraad Verheyden_ for setting this up for the Tempo team!
 
 ### Pay attention to metrics
 Find the most important things to improve and find the easiest way to improve them. These are my favorite kinds of PRs. 
 
 Some examples of the PRs and the effect they had on our system:
-- ![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/hedged_requests.png)
-Tempo makes hundreds of parallel requests to the object store backend to fetch data for every query, but our response latency was bottleneck'ed on the slowest request. Hedging requests is a neat way to solve this!
+1.
+![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/hedged_requests.png)
 
-- ![Reducing TCO with bucket index](../../images/bucket_index.png).
-Adding a tenant index to reduce the number of calls to the object store backend. Halved our TCO because that number of requests to GCS was a large part of our costs. 
+Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s.
 
-- ![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/cpu_optimisation.png)
+Tempo makes hundreds of parallel requests to the object store backend to fetch data for every query, but our response latency was bottleneck'ed on the slowest request. Hedging requests was a neat way to solve this!
+
+2.
+![Reducing TCO with bucket index](../../images/bucket_index.png).
+
+Reducing TCO with bucket index.
+
+Adding a tenant index to reduce the number of calls to the object store backend. This simple change halved our TCO because that number of requests to GCS was a large part of our costs. 
+
+3.
+![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/cpu_optimisation.png)
+
+Better batching at the distributors reduced our CPU utilization by 40%!
 
 ### Async Communication
 Write extensive meeting notes whenever possible and record important meetings. With the growing size of the company, not all teammates will be able to make every meeting, especially when it is a globally distributed workforce. 
@@ -46,6 +61,8 @@ Bring these updates to the team. Be vocal and bridge communication between teams
 - Find reasons to talk to neighbor squads/teams. [A simple tweet](https://twitter.com/mrannanay/status/1480492206662111232) reaching out to developers working on common technologies led to a collaboration between Grafana and Segment in the development of an open source Parquet SDK for Golang. 
 ![Engaging in Twitter threads](../../images/twitter_thread.png)
 
+_Engaging in Twitter threads_.
+
 ### Handling Burnout
 
 When innovation is all around you, it is up to you to make the most of it. At first we would prepare for a major launch once a quarter. Fast forward two years, new launches are happening every week. 
@@ -55,8 +72,12 @@ Sometimes, this pace of innovation can be overwhelming and make you feel alone /
 Taking time off to reconnect with family and friends, and working on your hobbies is important to recharge and engage with work again.
 
 ### Blogging online
+
 [This tweet](https://twitter.com/aaditsh/status/1490374753554776075) sums this up well
 ![Aadit Sheth's List of Highest ROIs](../../images/blog_online_tweet.png)
+
+_Aadit Sheth's List of Highest ROIs_.
+
 Talk about your work and all the internals of projects that only you know about. Engineers love reading about other team's work and sharing the details internally to see if its valuable to them as well.
 
 ### Be a thinker-doer!
@@ -77,6 +98,7 @@ This is a great way to scale the team and increase belongingness. Here’s a [gr
 In-person offsites are very valuable and a lot of fun too!
 ![Grafana Labs Monaco Offsite 2023](../../images/grafana_labs_monaco_offsite.png)
 
+_Grafana Labs Monaco Offsite 2023_.
 
 ### Invest in culture
 Take care of your employees and your employees will take care of you. We got named in the inc42 best places to work, 2021.
