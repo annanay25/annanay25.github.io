@@ -90,6 +90,9 @@ Will your work add value and improve the state of the system? These are tough qu
 
 Hackathons are a great way to surface innovation from teams. In December 2021, I had an urge to try and store traces in a columnar format that promised much higher query performance by reducing i/o throughput from the object store backend.
 ![My hackathon that inspired Tempo's Columnar Backend](../../images/parquet_hackathon.png)
+
+_My hackathon that inspired Tempo's Columnar Backend_.
+
 After months of research and experimentation, Apache Parquet was adapted as the official storage format for Tempo, and powered TraceQL - the query language for traces.
 
 ### Virtual and Regional Offsites
