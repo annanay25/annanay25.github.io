@@ -20,28 +20,29 @@ And the clusters we are able to manage with this kind of setup:
 
 ![Tempo Clusters (old screenshot, there are 20+ Tempo clusters today)](../../images/tempo_rollout_prs_2.png)
 
-Tempo Clusters (old screenshot, there are 20+ Tempo clusters today.
+_Tempo Release Automation (old screenshot, there are 20+ Tempo clusters today)_.
 
 Credit to _Koenraad Verheyden_ for setting this up for the Tempo team!
 
 ### Pay attention to metrics
+
 Find the most important things to improve and find the easiest way to improve them. These are my favorite kinds of PRs. 
 
 Some examples of the PRs and the effect they had on our system:
 
-1. Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s.
+1) Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s.
 
 ![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/hedged_requests.png)
 
 Tempo makes hundreds of parallel requests to the object store backend to fetch data for every query, but our response latency was bottleneck'ed on the slowest request. Hedging requests was a neat way to solve this!
 
-2. Reducing TCO with bucket index.
+2) Reducing TCO with bucket index.
 
 ![Reducing TCO with bucket index](../../images/bucket_index.png).
 
 Adding a tenant index to reduce the number of calls to the object store backend. This simple change halved our TCO because that number of requests to GCS was a large part of our costs. 
 
-3. Better batching at the distributors reduced our CPU utilization by 40%!
+3) Better batching at the distributors reduced our CPU utilization by 40%!
 
 ![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/cpu_optimisation.png)
 
@@ -106,7 +107,7 @@ In-person offsites are very valuable and a lot of fun too!
 
 ![Grafana Labs Monaco Offsite 2023](../../images/grafana_labs_monaco_offsite.png)
 
-_Grafana Labs Monaco Offsite 2023_.
+_All-hands pic from Grafana Labs Monaco Offsite 2023_.
 
 ### Invest in culture
 Take care of your employees and your employees will take care of you. [We got named in the inc42 best places to work in 2021 and 2023](https://grafana.com/blog/2023/05/09/grafana-labs-named-to-the-inc.-best-workplaces-2023-list/).
