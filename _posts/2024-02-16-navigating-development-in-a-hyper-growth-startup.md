@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigating Growth in a Hyper Growth Startup (Pt 1)
+title: Navigating Development in a Hyper Growth Startup (Pt 1)
 categories: tech
 ---
 
