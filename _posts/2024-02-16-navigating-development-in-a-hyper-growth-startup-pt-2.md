@@ -4,17 +4,20 @@ title: Navigating Development in a Hyper Growth Startup (Pt 2)
 categories: tech
 ---
 
-In Pt.1, I explained that kind of growth I was lucky to witness in my first few years at Grafana. In this post, I'd love to highlight my observations on things that worked well for us. There's a few things in here that we can do as an IC (Individual Contributor),
+In [Pt.1](https://annanay25.github.io/navigating-development-in-a-hyper-growth-startup/), I explained that kind of growth I was lucky to witness in my first few years at Grafana. In this post, I'd love to highlight my observations on things that worked well for us. There's a few things in here that we can do as an IC (Individual Contributor),
 and a few at the bottom of this list that can be implemented by company leadership. So lets' get into it.
 
 ### Processes and Reliability
 Ship fewer things, improve the quality of existing pieces - Learnt this from my (then) manager [David Kitchen](https://www.linkedin.com/in/deekitchen). If you need other tweets as validation, [here's one](https://twitter.com/amasad/status/1488713434208169986) from Amjad Masad:
+
 ![Amjad Masad Tweet](../../images/amjad_tweet.png)
 
 Before you pick something new to work on, check whether there are existing pieces that are slowing the team down. Focus on the small things - automated deployments, a fast CI pipeline, a flaky alert that wakes engineers up at night? Investing in processes and refining them pays dividends in the long run. In the Tempo squad (of 7 people) we started out with manual releases for the single ops and prod cluster we used to run, and today we’re managing ~10 production clusters all through weekly release automations. This is an example of the PRs our internal release bot creates:
+
 ![Tempo Rollout PRs](../../images/tempo_rollout_prs_1.png)
 
 And the clusters we are able to manage with this kind of setup:
+
 ![Tempo Clusters (old screenshot, there are 20+ Tempo clusters today)](../../images/tempo_rollout_prs_2.png)
 
 Tempo Clusters (old screenshot, there are 20+ Tempo clusters today.
@@ -56,7 +59,8 @@ Communicating updates is often two fold.
 - Did someone in a different part of the company build a cool tool that could be useful to your team as well? Did they ship a new feature that’s gaining traction? Did they build a dashboard that you liked? Talk about it, because fresh ideas spark innovation.
 Bring these updates to the team. Be vocal and bridge communication between teams. There is so much benefit in this as an organization grows large and its important to build upon each other's successes.
 
-- Find reasons to talk to neighbor squads/teams. [A simple tweet](https://twitter.com/mrannanay/status/1480492206662111232) reaching out to developers working on common technologies led to a collaboration between Grafana and Segment in the development of an open source Parquet SDK for Golang. 
+- Find reasons to talk to neighbor squads/teams. [A simple tweet](https://twitter.com/mrannanay/status/1480492206662111232) reaching out to developers working on common technologies led to a collaboration between Grafana and Segment in the development of an open source Parquet SDK for Golang.
+
 ![Engaging in Twitter threads](../../images/twitter_thread.png)
 
 _Engaging in Twitter threads_.
@@ -72,6 +76,7 @@ Taking time off to reconnect with family and friends, and working on your hobbie
 ### Blogging online
 
 [This tweet](https://twitter.com/aaditsh/status/1490374753554776075) sums this up well
+
 ![Aadit Sheth's List of Highest ROIs](../../images/blog_online_tweet.png)
 
 _Aadit Sheth's List of Highest ROIs_.
@@ -87,6 +92,7 @@ Will your work add value and improve the state of the system? These are tough qu
 ### Hackathons
 
 Hackathons are a great way to surface innovation from teams. In December 2021, I had an urge to try and store traces in a columnar format that promised much higher query performance by reducing i/o throughput from the object store backend.
+
 ![My hackathon that inspired Tempo's Columnar Backend](../../images/parquet_hackathon.png)
 
 _My hackathon that inspired Tempo's Columnar Backend_.
@@ -97,14 +103,18 @@ After months of research and experimentation, Apache Parquet was adapted as the 
 Meet with a set cadence, this could be once a quarter or twice a year, and a mix of virtual and in-person offsites; but take the time and get together to celebrate wins, challenges, hardships, and strengthen relationship between team members.
 This is a great way to scale the team and increase belongingness. Here’s a [great guide from Myrle Krantz](https://grafana.com/blog/2022/01/13/virtual-offsite-ideas-that-work-how-the-grafana-cloud-team-brings-together-150-people-online/) to how to make virtual offsites work. 
 In-person offsites are very valuable and a lot of fun too!
+
 ![Grafana Labs Monaco Offsite 2023](../../images/grafana_labs_monaco_offsite.png)
 
 _Grafana Labs Monaco Offsite 2023_.
 
 ### Invest in culture
-Take care of your employees and your employees will take care of you. We got named in the inc42 best places to work, 2021.
-https://grafana.com/blog/2021/05/12/grafana-labs-named-to-the-inc.-best-workplaces-2021-list 
+Take care of your employees and your employees will take care of you. [We got named in the inc42 best places to work in 2021 and 2023](https://grafana.com/blog/2023/05/09/grafana-labs-named-to-the-inc.-best-workplaces-2023-list/).
+Culture is a _hard_ problem. And its easy to talk about it in a hand-wavy sort of way. But asking the right questions is helpful in charting the right course. Here's a few to start: Is it clear to everyone why certain strategic decisions are made at the company level?
+Do teams have a clear vision on what to execute on? Does leadership trust the teams enough to give them enough room to experiment and execute?
 
+--- 
 
+I know this is a long list and probably not everything applies to every company/employee. But thinking about some of these has been helpful to us. Thanks for reading this far and I hope you found this blog valuable!
 
 Thanks to _Pablo.chachin_ and _Goutham Veeramachaneni_ for help in reviewing this blog post.
