@@ -25,24 +25,22 @@ Credit to _Koenraad Verheyden_ for setting this up for the Tempo team!
 Find the most important things to improve and find the easiest way to improve them. These are my favorite kinds of PRs. 
 
 Some examples of the PRs and the effect they had on our system:
-1.
-![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/hedged_requests.png)
 
-Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s.
+1. Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s.
+
+![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/hedged_requests.png)
 
 Tempo makes hundreds of parallel requests to the object store backend to fetch data for every query, but our response latency was bottleneck'ed on the slowest request. Hedging requests was a neat way to solve this!
 
-2.
-![Reducing TCO with bucket index](../../images/bucket_index.png).
+2. Reducing TCO with bucket index.
 
-Reducing TCO with bucket index.
+![Reducing TCO with bucket index](../../images/bucket_index.png).
 
 Adding a tenant index to reduce the number of calls to the object store backend. This simple change halved our TCO because that number of requests to GCS was a large part of our costs. 
 
-3.
-![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/cpu_optimisation.png)
+3. Better batching at the distributors reduced our CPU utilization by 40%!
 
-Better batching at the distributors reduced our CPU utilization by 40%!
+![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/cpu_optimisation.png)
 
 ### Async Communication
 Write extensive meeting notes whenever possible and record important meetings. With the growing size of the company, not all teammates will be able to make every meeting, especially when it is a globally distributed workforce. 
