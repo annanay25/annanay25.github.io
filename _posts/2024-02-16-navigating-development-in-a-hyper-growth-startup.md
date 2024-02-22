@@ -12,7 +12,7 @@ But this blog is not a glorified advertisement to work for Grafana, although I�
 ## The growth story
 
 I joined Grafana when it was a mid size startup and when no onboarding process existed for new employees. 
-My manager at the time, Tom Wilkie, set up 1:1s with coworkers from different teams within the org so I could get a lay of the land and understand the range of products we work on. 
+My manager at the time, [Tom Wilkie](https://twitter.com/tom_wilkie), set up 1:1s with coworkers from different teams within the org so I could get a lay of the land and understand the range of products we work on. 
 A week later, I got the chance to meet the Grafana Labs team at KubeCon San Diego 2019. 
 Here’s a blurry pic I took - this is half of Grafana’s Cloud division in November 2019.
 
@@ -24,21 +24,20 @@ _From L to R, Edward Welch, Goutham Veeramachaneni, Björn Rabenstein, Joe Ellio
 
 _Our booth at KubeCon 2019 San Diego (#fomo as I’m not in this pic)_.
 
-​​Since that time, every single thing about Grafana Labs has changed; except for the awesome quotient of people here. 
+​​Since that time, every single thing about Grafana Labs has changed; except for the awesome quotient of people here. Here's an all-hands pic from our May 2022 offsite in Whistler, Canada -
 
 ![GrafanaFest Whistler 2022](../../images/grafanafest_whistler_2022.png)
-_All-hands pic from our May 2022 offsite in Whistler, Canada_.
+
+Our monthly all hands meetings are lively as ever -
 
 ![Grafana Banter](../../images/grafana_banter.png)
 
-_Our monthly all hands meetings are lively as ever_.
-
-We have grown the open source technologies we invest in, including launching the tracing database Grafana Tempo, a dedicated squad to contribute to upstream OpenTelemetry, acquiring k6 and Amixr (now Grafana OnCall) - to name a few. 
-
-As engineers on a fast moving open source cloud company, we got the unique opportunity to develop our skills in multiple facets. From actively developing features and managing our hosted traces service to engaging with a community of users and participating in sales calls, the experience has taught me invaluable skills for my professional ventures. 
-
-Our sales exploded. 
+Our sales exploded -
 
 ![Grafana Sales Interal Message](../../images/grafana_sales_msg.png)
+
+We have grown the open source technologies we invest in, including launching the tracing database Grafana Tempo, a dedicated squad to contribute to upstream OpenTelemetry, acquiring [k6](https://k6.io), [Pyroscope](https://pyroscope.io), and Amixr (now Grafana OnCall) - to name a few. 
+
+As engineers on a fast moving open source cloud company, we got the unique opportunity to develop our skills in multiple facets. From actively developing features and managing our hosted services to engaging with a community of users and participating in sales calls, the experience has taught me invaluable skills for my professional ventures. 
 
 So how does one navigate growth in such a fast paced environment? Read [Pt.2](https://annanay25.github.io/navigating-development-in-a-hyper-growth-startup-pt-2/) for this.
