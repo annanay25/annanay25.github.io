@@ -32,7 +32,7 @@ Some examples of the PRs and the effect they had on our system:
 
 1) Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s.
 
-![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/hedged_requests.png)
+![Hedged requests. Reduce our p99 query latency from 9.8s to 2.5s](../../images/cpu_optimisation.png)
 
 Tempo makes hundreds of parallel requests to the object store backend to fetch data for every query, but our response latency was bottleneck'ed on the slowest request. Hedging requests was a neat way to solve this!
 
@@ -42,9 +42,9 @@ Tempo makes hundreds of parallel requests to the object store backend to fetch d
 
 Adding a tenant index to reduce the number of calls to the object store backend. This simple change halved our TCO because that number of requests to GCS was a large part of our costs. 
 
-3) Better batching at the distributors reduced our CPU utilization by 40%!
+3) A simple change to improve trace batching at the distributors reduced our CPU utilization by 40%!
 
-![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/cpu_optimisation.png)
+![Better batching at the distributors reduced our CPU utilization by 40%!](../../images/hedged_requests.png)
 
 ### Async Communication
 Write extensive meeting notes whenever possible and record important meetings. With the growing size of the company, not all teammates will be able to make every meeting, especially when it is a globally distributed workforce. 
@@ -99,6 +99,7 @@ Hackathons are a great way to surface innovation from teams. In December 2021, I
 _My hackathon that inspired Tempo's Columnar Backend_.
 
 After months of research and experimentation, Apache Parquet was adapted as the official storage format for Tempo, and powered TraceQL - the query language for traces.
+There are lots of such examples of internal hackathon projects turning into full blown products within a year or two at Grafana. Some of these include [Adaptive Metrics](https://grafana.com/blog/2023/05/09/adaptive-metrics-grafana-cloud-announcement/) and the [collaboration between k6 & Tempo](https://grafana.com/blog/2022/11/03/how-to-correlate-performance-testing-and-distributed-tracing-to-proactively-improve-reliability/).
 
 ### Virtual and Regional Offsites
 Meet with a set cadence, this could be once a quarter or twice a year, and a mix of virtual and in-person offsites; but take the time and get together to celebrate wins, challenges, hardships, and strengthen relationship between team members.
