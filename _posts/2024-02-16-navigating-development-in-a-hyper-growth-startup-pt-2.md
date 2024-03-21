@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigating Development in a Hyper Growth Startup (Pt 2)
-categories: tech,personal
+categories: tech
 ---
 
 In [Pt.1](https://annanay25.github.io/navigating-development-in-a-hyper-growth-startup/), I explained that kind of growth I was lucky to witness in my first few years at Grafana. In this post, I'd love to highlight my observations on things that worked well for us. There's a few things in here that we can do as an IC (Individual Contributor),
