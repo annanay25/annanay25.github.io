@@ -4,7 +4,7 @@ title: Attending SCaLE 21x
 categories: tech
 ---
 
-SCaLE (Southern California Linux Expo) 21x was held on 15-17th March 2024 in Pasadena, LA. I was lucky enough to present a talk titled "So you want to build an Incident Response stack using OpenTelemetry?".
+SCaLE (Southern California Linux Expo) 21x was held on 15-17th March 2024 in Pasadena, LA. I was lucky enough to present a talk titled "[So you want to build an Incident Response stack using OpenTelemetry?](https://www.socallinuxexpo.org/scale/21x/presentations/so-you-want-build-incident-response-stack-using-opentelemetry)".
 
 ![Hello From SCaLE 21x](../../images/scale-stage-pic.jpg)
 
