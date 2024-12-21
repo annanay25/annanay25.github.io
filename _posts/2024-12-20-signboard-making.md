@@ -4,13 +4,11 @@ title: How to make a signboard
 categories: personal
 ---
 
-Why would you want to make a Signboard you ask? 
-
-Cuz it's cool, friend.
+Why would you want to make a Signboard you ask? Cuz it's cool, friend.
 
 Also, I watched some videos from [TheSignGuy](https://www.instagram.com/austinmollno) and went down a rabbithole. 
 
-It is surprisingly simple to make a signboard so I thought I'll document the process for everyone :)
+It is surprisingly simple to make a signboard - I thought I'll document the process for everyone :)
 
 ## My setup
 
