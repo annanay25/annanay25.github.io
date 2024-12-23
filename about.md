@@ -17,7 +17,7 @@ Previously I:
   - SCaLE 21x: [So you want to build an Incident Response stack using OpenTelemetry?](https://www.socallinuxexpo.org/scale/21x/presentations/so-you-want-build-incident-response-stack-using-opentelemetry)
   - Bangalore Observability Meetup: [Tempo, Path to 1M spans/sec](https://www.youtube.com/watch?v=2LELhbs09cc).
 - was a Site Reliability Engineer at @media.net handling the infrastructure for a Spam Detection Engine.
-- spent 4 amazing undergraduate years studying Computer Science at @IIT-H.
+- spent 4 amazing undergraduate years studying Computer Science at IIT Hyderabad.
 
 ### Contact me
 
