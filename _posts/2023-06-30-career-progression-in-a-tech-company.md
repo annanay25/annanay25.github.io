@@ -11,3 +11,7 @@ cost centers. This can mean one of few things -
 - work on products that are making the most revenue within the company
 - optimise and reduce costs of running software in the cloud
 - refer companies and help bring in sales / new customers
+
+Personal projects are nice but won't get you promoted unless they are important to the company in one way or another. Aligning yourself with the direction of the company is the best both for the individual and the company!
+
+You can read more on a related blog here: https://www.seangoedecke.com/staff-engineer-promotions/?utm_source=tldrnewsletter
