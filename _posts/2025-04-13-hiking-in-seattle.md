@@ -5,7 +5,6 @@ categories: personal
 ---
 
 I get the "why do you live in Seattle" often enough that I decided to write something about hiking.
-
 Here's why I do it:
 1. Forces you to be up early on a weekend.. to pack your favourite snacks.
 2. No laptop/low connectivity for most of the day.. to have your favourite snacks.
