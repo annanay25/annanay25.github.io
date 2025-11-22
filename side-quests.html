@@ -2,20 +2,17 @@
 layout: page
 permalink: /side-quests/
 title: side-quests
-description: Builds that keep my curiosity sharp—hardware hacks, data toys, and micro products.
 projects:
-  - title: GitHub Developer Pass
-    summary: A wallet pass that pulls my GitHub profile, name, and contributions chart into a pocket-sized “developer pass.”
+  - summary: A wallet pass that pulls my GitHub profile, name, and contributions chart into a pocket-sized “developer pass.”
     image: /images/github-developer-pass-1.jpg
     image_alt: GitHub developer Google Wallet pass
     link: /github-developer-pass/
     year: 2025
-    meta: Wallet pass
+    meta: Github Developer Wallet Pass
     tags:
       - GitHub
       - Google Wallet
       - Wallet pass
-    link_label: "See in Google Wallet"
 ---
 
 <div class="side-quests-hero">
@@ -44,7 +41,6 @@ projects:
             {% if project.meta %}<span>{{ project.meta }}</span>{% endif %}
           </p>
           {% endif %}
-          <h3>{{ project.title }}</h3>
           <p>{{ project.summary }}</p>
           {% if project.tags %}
           <ul class="side-quests-card__tags">

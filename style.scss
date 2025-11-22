@@ -245,52 +245,67 @@ nav {
 // .main
 //
 
+.posts {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-bottom: 50px;
+}
+
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border: 1px solid $lightGray;
+  border-radius: 14px;
+  background: $white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .posts .post-preview {
   display: flex;
-  gap: 20px;
-  align-items: center;
-
-  @include mobile {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  flex-direction: column;
+  height: 100%;
 }
 
 .posts .post-thumbnail {
-  flex: 0 0 180px;
-  display: flex;
-  align-items: center;
-
-  @include mobile {
-    margin-bottom: 10px;
-  }
+  width: 100%;
+  background: $lightGray;
 }
 
 .posts .post-thumbnail img {
   width: 100%;
-  height: auto;
-  max-height: 120px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 6px;
   margin: 0;
 }
 
 .posts .post-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
   flex: 1;
 
   h1 {
-    margin-top: 0;
+    margin: 0;
+    font-size: 22px;
   }
 }
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+.posts .post-details .entry {
+  flex: 1;
+}
+
+.posts .post-details .read-more {
+  align-self: flex-start;
+  font-size: 15px;
+  letter-spacing: 0.08em;
 }
 
 .post {
@@ -437,3 +452,4 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
