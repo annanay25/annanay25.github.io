@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cornell Tech Survival Guide.
+thumbnail: /images/cornell-tech-classroom-view.jpeg
 categories: personal
 ---
 
@@ -8,7 +9,7 @@ Welcome to the CTSG. 🚀
 
 This is a dynamic document that will be updated through the year with activity highlights of the 2022 batch, and will (hopefully) live on to serve the future batches. It will be a collective contribution of the batch and aim to include the best experiences from everyone.
 
-Without further ado, a list of the best at Cornell Tech in roughly chronological order 
+Without further ado, a list of the best at Cornell Tech in roughly chronological order
 
 - Register for all possible courses in pre-enrolment (or at least try) only to drop them all by the add/drop deadlines.
 - Click to enrol in classes **on the dot** at the time mentioned or prepare to sit in the waitlist and watch the others attend your beloved classes 🛎
@@ -25,6 +26,6 @@ Without further ado, a list of the best at Cornell Tech in roughly chronological
 Indian stores near campus
 - Patel Brothers in Queens (https://goo.gl/maps/9MheiCAbnRQ4rQ95A)
 
-Bowling alleys in queens. 
+Bowling alleys in queens.
 
 

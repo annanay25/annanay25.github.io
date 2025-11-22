@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SCaLE 21x 2024 - Pasadena, LA
+thumbnail: /images/scale-stage-pic.jpg
 categories: tech
 ---
 
@@ -16,7 +17,7 @@ The vibes were immaculate. It felt a lot less enterprise-y and had a lot of hack
 
 ![VM Dispenser](../../images/vm-dispenser-outside.jpg)
 
-On first glance it looks like a regular Soda dispenser. But the makers have actually ripped the insides out and replace it with a server rack. 
+On first glance it looks like a regular Soda dispenser. But the makers have actually ripped the insides out and replace it with a server rack.
 You can put quarters in, choose the flavor of Linux, and it will spin it up on the server rack inside the dispenser.
 It will also print a receipt with the SSH credentials to log into the VM!
 

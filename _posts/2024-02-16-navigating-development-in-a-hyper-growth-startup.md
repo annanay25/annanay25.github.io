@@ -1,19 +1,20 @@
 ---
 layout: post
 title: Navigating Development in a Hyper Growth Startup (Pt 1)
+thumbnail: /images/grafana_kubecon_2019_1.png
 categories: tech
 ---
 
-3+ years, 1200 wonderful new colleagues, $510 Million in funding and [6 acquisitions](https://www.crunchbase.com/search/acquisitions/field/organizations/num_acquisitions/raintank) in, this blog post is a retrospective on what it is like to thrive in a hyper-growth startup. 
+3+ years, 1200 wonderful new colleagues, $510 Million in funding and [6 acquisitions](https://www.crunchbase.com/search/acquisitions/field/organizations/num_acquisitions/raintank) in, this blog post is a retrospective on what it is like to thrive in a hyper-growth startup.
 Despite personally having qualms calling a company a rocketship ([tweet](https://twitter.com/mrannanay/status/1462389807850549252)) I do believe the term applies well to [Grafana Labs](https://grafana.com/) due to its growing headcount, bullish investments in the observability space, and accelerated adoption from open source enthusiasts to established enterprises.
 
-But this blog is not a glorified advertisement to work for Grafana, although I’d be happy to chat about that if it would be of interest. This is about my experience of witnessing this phenomenal growth as a software developer in the Grafana Cloud division, a BTS of sorts. 
+But this blog is not a glorified advertisement to work for Grafana, although I’d be happy to chat about that if it would be of interest. This is about my experience of witnessing this phenomenal growth as a software developer in the Grafana Cloud division, a BTS of sorts.
 
 ## The growth story
 
-I joined Grafana when it was a mid size startup and when no onboarding process existed for new employees. 
-My manager at the time, [Tom Wilkie](https://twitter.com/tom_wilkie), set up 1:1s with coworkers from different teams within the org so I could get a lay of the land and understand the range of products we work on. 
-A week later, I got the chance to meet the Grafana Labs team at KubeCon San Diego 2019. 
+I joined Grafana when it was a mid size startup and when no onboarding process existed for new employees.
+My manager at the time, [Tom Wilkie](https://twitter.com/tom_wilkie), set up 1:1s with coworkers from different teams within the org so I could get a lay of the land and understand the range of products we work on.
+A week later, I got the chance to meet the Grafana Labs team at KubeCon San Diego 2019.
 Here’s a blurry pic I took - this is half of Grafana’s Cloud division in November 2019.
 
 ![Grafana KubeCon 2019](../../images/grafana_kubecon_2019_1.png)
@@ -36,8 +37,8 @@ Our sales exploded -
 
 ![Grafana Sales Interal Message](../../images/grafana_sales_msg.png)
 
-We have grown the open source technologies we invest in, including launching the tracing database Grafana Tempo, a dedicated squad to contribute to upstream OpenTelemetry, acquiring [k6](https://k6.io), [Pyroscope](https://pyroscope.io), and Amixr (now Grafana OnCall) - to name a few. 
+We have grown the open source technologies we invest in, including launching the tracing database Grafana Tempo, a dedicated squad to contribute to upstream OpenTelemetry, acquiring [k6](https://k6.io), [Pyroscope](https://pyroscope.io), and Amixr (now Grafana OnCall) - to name a few.
 
-As engineers on a fast moving open source cloud company, we got the unique opportunity to develop our skills in multiple facets. From actively developing features and managing our hosted services to engaging with a community of users and participating in sales calls, the experience has taught me invaluable skills for my professional ventures. 
+As engineers on a fast moving open source cloud company, we got the unique opportunity to develop our skills in multiple facets. From actively developing features and managing our hosted services to engaging with a community of users and participating in sales calls, the experience has taught me invaluable skills for my professional ventures.
 
 So how does one navigate growth in such a fast paced environment? Read [Pt.2](https://annanay25.github.io/navigating-development-in-a-hyper-growth-startup-pt-2/) for this.

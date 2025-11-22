@@ -1,12 +1,13 @@
 ---
 layout: post
 title: How to make a signboard
+thumbnail: /images/cricut_in_action.png
 categories: personal
 ---
 
 Why would you want to make a Signboard you ask? Cuz it's cool, friend.
 
-Also, I watched some videos from [TheSignGuy](https://www.instagram.com/austinmollno) and went down a rabbithole. 
+Also, I watched some videos from [TheSignGuy](https://www.instagram.com/austinmollno) and went down a rabbithole.
 
 It is surprisingly simple to make a signboard - I thought I'll document the process for everyone :)
 
@@ -22,7 +23,7 @@ The vinyl then needs to be aligned and pressed onto the base cutting sheet that 
 
 ### 2. For the base materials, I used some [4x16 aluminum sheets](https://www.amazon.com/dp/B0BZDDHLNX?ref=ppx_yo2ov_dt_b_fed_asin_title) and some [12x12 Plexiglass sheets](https://www.amazon.com/dp/B0CCWQF53H?ref=ppx_yo2ov_dt_b_fed_asin_title).
 
-### 3. We need some [Transfer tape](https://www.amazon.com/dp/B0943DQ9CD?ref=ppx_yo2ov_dt_b_fed_asin_title) to transfer Vinyl onto the base material. 
+### 3. We need some [Transfer tape](https://www.amazon.com/dp/B0943DQ9CD?ref=ppx_yo2ov_dt_b_fed_asin_title) to transfer Vinyl onto the base material.
 
 This was confusing to me at first but every Vinyl sheet has two layers: a vinyl layer pasted onto a thin plastic layer. So we need to "transfer" vinyl off this plastic layer and onto the base material we want.
 

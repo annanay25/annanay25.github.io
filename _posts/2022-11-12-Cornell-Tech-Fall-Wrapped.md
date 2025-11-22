@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Cornell Tech Fall Semester Wrapped
+thumbnail: /images/aml-summary.png
 categories: personal
 ---
 
-I joined Cornell Tech as a masters student in Computer Science in August 2022. Here's my (late) [tweet](https://twitter.com/mrannanay/status/1575117727102107649) about this new adventure. 
+I joined Cornell Tech as a masters student in Computer Science in August 2022. Here's my (late) [tweet](https://twitter.com/mrannanay/status/1575117727102107649) about this new adventure.
 This blog is a Spotify Wrapped :tm: version of my semester.
 
 
@@ -35,8 +36,8 @@ Course content available at [https://minitorch.github.io/](https://minitorch.git
 
 1. SnowFlake Cloud Data Summit - Great place, great energy, lots of folks working in the cloud data storage space. And of course, great swag! 😄 Mandatory [tweet](https://twitter.com/mrannanay/status/1575114449593065475) during the conference.
 
-2. NYC Tech Week - An array of networking events spread through some great locations throughout the city. 
-Very interesting backstory on Capital and how the company organized the Tech Week - [https://www.notboring.co/p/capital-and-taste](https://www.notboring.co/p/capital-and-taste). Tweets from the event - 
+2. NYC Tech Week - An array of networking events spread through some great locations throughout the city.
+Very interesting backstory on Capital and how the company organized the Tech Week - [https://www.notboring.co/p/capital-and-taste](https://www.notboring.co/p/capital-and-taste). Tweets from the event -
 [memories](https://twitter.com/mrannanay/status/1579630795714883584) bring back [memories](https://twitter.com/mrannanay/status/1579992300511723521) bring back ....
 
 Thanks for reading!
