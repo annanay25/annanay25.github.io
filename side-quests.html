@@ -1,0 +1,64 @@
+---
+layout: page
+permalink: /side-quests/
+title: side-quests
+description: Builds that keep my curiosity sharp—hardware hacks, data toys, and micro products.
+projects:
+  - title: GitHub Developer Pass
+    summary: A wallet pass that pulls my GitHub profile, name, and contributions chart into a pocket-sized “developer pass.”
+    image: /images/github-developer-pass-1.jpg
+    image_alt: GitHub developer Google Wallet pass
+    link: /github-developer-pass/
+    year: 2025
+    meta: Wallet pass
+    tags:
+      - GitHub
+      - Google Wallet
+      - Wallet pass
+    link_label: "See in Google Wallet"
+---
+
+<div class="side-quests-hero">
+  <p class="side-quests-eyebrow">Weekend builds · experiments · tinkering logs</p>
+  <p>{{ page.description }}</p>
+</div>
+
+<!-- Update the project list in the front matter above to feature new builds. -->
+
+<section class="side-quests-grid">
+  {% for project in page.projects %}
+    {% assign project_href = project.link %}
+    {% unless project_href contains '://' %}
+      {% assign project_href = site.baseurl | append: project_href %}
+    {% endunless %}
+    <article class="side-quests-card">
+      <a class="side-quests-card__link" href="{{ project_href }}" {% if project.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+        <div class="side-quests-card__media">
+          <img src="{{ project.image }}" alt="{{ project.image_alt | default: project.title }}" loading="lazy" />
+        </div>
+        <div class="side-quests-card__body">
+          {% if project.year or project.meta %}
+          <p class="side-quests-card__meta">
+            {% if project.year %}<span>{{ project.year }}</span>{% endif %}
+            {% if project.year and project.meta %}<span aria-hidden="true">&middot;</span>{% endif %}
+            {% if project.meta %}<span>{{ project.meta }}</span>{% endif %}
+          </p>
+          {% endif %}
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.summary }}</p>
+          {% if project.tags %}
+          <ul class="side-quests-card__tags">
+            {% for tag in project.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <span class="side-quests-card__cta">{{ project.link_label | default: "Read the build notes" }} →</span>
+        </div>
+      </a>
+    </article>
+  {% else %}
+    <p class="side-quests-empty">Add your latest experiments above to populate this grid.</p>
+  {% endfor %}
+</section>
+

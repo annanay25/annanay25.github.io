@@ -313,6 +313,114 @@ nav {
   }
 }
 
+.side-quests-hero {
+  margin: 10px 0 40px;
+  max-width: 720px;
+}
+
+.side-quests-eyebrow {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $gray;
+  margin-bottom: 10px;
+}
+
+.side-quests-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: 60px;
+}
+
+.side-quests-card {
+  list-style: none;
+}
+
+.side-quests-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid $lightGray;
+  border-radius: 12px;
+  overflow: hidden;
+  background: $white;
+  color: inherit;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.side-quests-card__media {
+  aspect-ratio: 4 / 3;
+  background: $lightGray;
+  overflow: hidden;
+}
+
+.side-quests-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.side-quests-card__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.side-quests-card__meta {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $gray;
+  display: flex;
+  gap: 8px;
+}
+
+.side-quests-card__meta span {
+  white-space: nowrap;
+}
+
+.side-quests-card__tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.side-quests-card__tags li {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: $lightGray;
+  color: $darkGray;
+}
+
+.side-quests-card__cta {
+  margin-top: auto;
+  font-weight: 600;
+  color: $blue;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.side-quests-empty {
+  color: $gray;
+  font-style: italic;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
