@@ -257,16 +257,20 @@ nav {
 
   @include mobile {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 .posts .post-thumbnail {
-  flex: 0 0 140px;
+  flex: 0 0 180px;
+  display: flex;
+  align-items: center;
 }
 
 .posts .post-thumbnail img {
   width: 100%;
-  height: 100px;
+  height: auto;
+  max-height: 120px;
   object-fit: cover;
   border-radius: 6px;
   margin: 0;
