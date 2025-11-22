@@ -6,7 +6,7 @@ categories: tech
 ---
 
 
-_This is a blog version of the talk I gave at GrafanaCON 2022_.
+_This is a blog version of the [talk I gave at GrafanaCON 2022](https://grafana.com/go/grafanaconline/2022/grafana-tempo-new-distributed-tracking-features/)_.
 
 ### Transcript
 
@@ -14,12 +14,14 @@ _This is a blog version of the talk I gave at GrafanaCON 2022_.
 
 Today I'd like to talk to you about how we're using Apache Parquet to bring blazing fast search to Tempo.
 
-![Tempo Journey](../../images/tempo-parquet-2.jpg)
-
 Before I get started, I'd like to quickly recap the history of implementing search in Tempo. We launched Tempo in October 2020. Back then it was a key-value store with a strong integration with Loki and Prometheus to enable trace discovery. In June 2021 we launched Tempo 1.0, marking the key-value storage table and the cloud-hosted traces as generally available. This was a milestone because beyond this the team really started focusing on implementing the next key feature around searching over trace data.
+
+![Tempo Journey](../../images/tempo-parquet-2.jpg)
 
 In November 2021 we launched search over recent data that we store in ingesters. To do this we use the complementary flat buffer–based search. We built an index along with the proto data on the side. Soon after, in January 2022, we launched full backend search using serverless technologies. This would launch cloud functions to search over product data present on the object store backend. But as we implemented fallback search we realized that we needed to fundamentally change the backend and format to enable queries over large data sets, unlock queries over more than 24 hours, and also unlock three SQL. This is why we started really investing into Parquet as the new storage format of choice.
 
+
+## Apache Parquet
 
 So what is Parquet? Parquet is an open standard under the Apache Foundation, and to quote from their website, Apache Parquet is an open source column-oriented format.
 
@@ -79,6 +81,8 @@ Now let’s zoom out and see how Parquet data sits on disk. Tempo batches traces
 Because everything is an open format, we can point off-the-shelf tooling at any block to inspect row counts, column sizes, or even preview the encoded data. That transparency is handy for debugging and gives us confidence that what we store is exactly what we’ll be able to read back when Grafana needs it.
 
 This approach stands in contrast to today’s custom format, where we append compressed protobuf payloads into a bespoke data file plus a sidecar index that lists page locations. We even ship a CLI to trawl those binary files, but they aren’t open or inspectable the way Parquet is.
+
+# Closing remarks
 
 And that’s really the heart of this proposal. Everything I covered here lives in an open design doc and PR on the Tempo repo—we’d love feedback on the storage layout, the schema work, and the roadmap toward dynamic columns. Please jump in with suggestions or comments; we’re eager to iterate with the community before we ship this to production.
 
