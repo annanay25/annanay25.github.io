@@ -33,6 +33,6 @@ I have often shot myself in the foot with inadequate language knowledge, and rec
 - Finally, finding the perfect project is a myth — just start contributing! Having said that, there are some factors to consider while picking a project that make the overall contributor experience enjoyable.
 Evaluate the project roadmap, the skills you expect to pick up as you contribute to the project, and ensure a friendly, open community.
 
-All the best on your journey in open source! If you’re looking for a good project to start, do check out Jaeger (https://github.com/jaegertracing/jaeger)!
+All the best on your journey in open source! If you’re looking for a good project to start, do check out [Jaeger](https://github.com/jaegertracing/jaeger)!
 
 _This was originally [posted on Medium](https://medium.com/@annanay25/fixing-the-cold-start-in-open-source-contribution-4f61eb09c201) in Jun 2019_

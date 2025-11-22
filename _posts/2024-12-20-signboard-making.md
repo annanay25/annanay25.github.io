@@ -34,3 +34,8 @@ I bought this after the first few times tring to transfer the vinyl by hand and 
 ![Cold roll laminator](../images/cold_roll_laminator.png)
 
 Some boards I've made.
+
+![Grafana WAY](../images/signboard-1.jpg)
+![STAAAHP](../images/signboard-2.jpg)
+![LGTM](../images/signboard-3.jpg)
+![Bear crossing](../images/signboard-4.jpg)
