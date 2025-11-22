@@ -5,10 +5,12 @@ thumbnail: /images/oss-contributions.jpg
 categories: tech
 ---
 
+Contributing to open source is a rewarding activity, but it can be overwhelming to begin with. So I decided to compile a list of gotcha’s that would’ve been useful for me when I got started in this journey, and hope it benefits others as well.
+
 ![Source — Bill Roberson/Digital Trends](../../images/oss-contributions.jpg)
 
-Contributing to open source is a rewarding activity, but it can be overwhelming to begin with.
-So I decided to compile a list of gotcha’s that would’ve been useful for me when I got started in this journey, and hope it benefits others as well —
+
+Here's the list:
 
 - Always ask before sending in the PR! Ask if the changes being submitting are the right ones to make. The maintainer could have very different expectations from the proposed solution, and its better to discuss the solution upfront rather than to spend days implementing it.
 Comment on the issue thread to save time and effort!

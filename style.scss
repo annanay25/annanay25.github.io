@@ -253,7 +253,7 @@ nav {
 .posts .post-preview {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
 
   @include mobile {
     flex-direction: column;
@@ -265,6 +265,10 @@ nav {
   flex: 0 0 180px;
   display: flex;
   align-items: center;
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
 }
 
 .posts .post-thumbnail img {
@@ -278,6 +282,10 @@ nav {
 
 .posts .post-details {
   flex: 1;
+
+  h1 {
+    margin-top: 0;
+  }
 }
 
 .posts > .post:last-child {
