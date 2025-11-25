@@ -5,7 +5,7 @@ thumbnail: /images/amjad_tweet.png
 categories: tech
 ---
 
-In [Pt.1](https://annanay25.github.io/navigating-development-in-a-hyper-growth-startup/), I explained that kind of growth I was lucky to witness in my first few years at Grafana. In this post, I'd love to highlight my observations on things that worked well for us. There's a few things in here that we can do as an IC (Individual Contributor),
+In [Pt.1](https://annanay.dev/navigating-development-in-a-hyper-growth-startup/), I explained that kind of growth I was lucky to witness in my first few years at Grafana. In this post, I'd love to highlight my observations on things that worked well for us. There's a few things in here that we can do as an IC (Individual Contributor),
 and a few at the bottom of this list that can be implemented by company leadership. So lets' get into it.
 
 ### Processes and Reliability

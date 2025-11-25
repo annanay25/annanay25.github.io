@@ -10,7 +10,7 @@ I'm currently working alongside an amazing team to build an Agentic LLM that liv
 
 Previously I:
 - co-created [Grafana Tempo](https://github.com/grafana/tempo/): a high performance, open source, distributed tracing backend.
-- was a Graduate student in Computer Science at Cornell University. Read about my Fall 2022 semester [here]([url](https://annanay25.github.io/Cornell-Tech-Fall-Wrapped/)).
+- was a Graduate student in Computer Science at Cornell University. Read about my Fall 2022 semester [here]([url](https://annanay.dev/Cornell-Tech-Fall-Wrapped/)).
 - have given talks at
   - KubeCON India 2025: [Auto-instrumentation for GPU performance using eBPF](https://youtu.be/eEBAFyLB9Zg?si=8HS9tSWTVuahkzcq)
   - FOSDEM 2025: [Auto-instrumentation for GPU performance using eBPF](https://archive.fosdem.org/2025/schedule/event/fosdem-2025-5162-auto-instrumentation-for-gpu-performance-using-ebpf/).

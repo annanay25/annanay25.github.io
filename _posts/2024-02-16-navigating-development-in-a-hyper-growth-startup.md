@@ -41,4 +41,4 @@ We have grown the open source technologies we invest in, including launching the
 
 As engineers on a fast moving open source cloud company, we got the unique opportunity to develop our skills in multiple facets. From actively developing features and managing our hosted services to engaging with a community of users and participating in sales calls, the experience has taught me invaluable skills for my professional ventures.
 
-So how does one navigate growth in such a fast paced environment? Read [Pt.2](https://annanay25.github.io/navigating-development-in-a-hyper-growth-startup-pt-2/) for this.
+So how does one navigate growth in such a fast paced environment? Read [Pt.2](https://annanay.dev/navigating-development-in-a-hyper-growth-startup-pt-2/) for this.
