@@ -5,8 +5,6 @@ thumbnail: /images/gpu-observability-kubecon.jpg
 categories: tech
 ---
 
-# Unlocking GPU Observability with eBPF
-
 If you're deploying models today, you know the game: GPUs are the most critical, and often most expensive, component in our infrastructure. Yet, when something goes wrong with a high-stakes training or inference job, the process of debugging often feels like operating on a patient in a dark room.
 
 As an engineer working on observability, I realized we had a critical gap. We're investing billions in hardware, but our tooling forces us into a terrible choice:
