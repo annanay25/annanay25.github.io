@@ -5,18 +5,18 @@ thumbnail: /images/gpu-observability-kubecon.jpg
 categories: tech
 ---
 
-If you're deploying models today, you know the game: GPUs are the most critical, and often most expensive, component in our infrastructure. Yet, when something goes wrong with a high-stakes training or inference job, the process of debugging often feels like operating on a patient in a dark room.
+If you're deploying Language/Vision models today, you know that GPUs are the most critical, and often most expensive, component in our infrastructure. Yet, when something goes wrong with a high-stakes training or inference job, the debugging loop turns into slow guesswork.
 
-As an engineer working on observability, I realized we had a critical gap. We're investing billions in hardware, but our tooling forces us into a terrible choice:
+As an engineer working on observability, I realized we had a critical gap. We're investing billions in hardware, but our tooling forces us into two camps:
 
-1.  **Hardware Metrics (The Health Check):** Tools like DCGM give you utilization, temperature, and power consumption. Essential data, but it only answers: "Is the chip alive and running hot?" It tells you nothing about *application logic* or *efficiency*.
-2.  **Heavy Profilers (The Microscopic View):** Tools like Nsight give you deep traces, but they require code changes, introduce significant overhead, and generate massive files. They are too heavy to run continuously in a production cluster.
+1.  **Hardware Metrics (The Health Check):** Tools like DCGM give us utilization, temperature, and power consumption. Essential data, but it only answers: "Is the chip alive and running hot?" It tells us nothing about *application logic* or *efficiency*.
+2.  **Heavy Profilers (The Microscopic View):** Tools like PyTorch profiler and Nvidia Nsight Systems are powerful and give us deep traces, but they require code changes, introduce significant overhead, and generate massive files. They are too heavy to run continuously in a production cluster.
 
 We needed a solution that offered application-level observability with zero code changes and minimal performance impact.
 
 ### Our Solution: Auto-Instrumentation via eBPF
 
-The solution lies in **eBPF (Extended Berkeley Packet Filter)**. For those unfamiliar, eBPF allows us to run safe, efficient programs directly within the Linux kernel. It gives us a vantage point that the application code itself can't see.
+The solution lies in **eBPF (Extended Berkeley Packet Filter)** which allows us to run safe, efficient programs directly within the Linux kernel. It gives us a vantage point that the application code itself can't see.
 
 Using **Grafana Beyla**, our open-source auto-instrumentation tool, we harness eBPF to monitor the interaction between the CPU and the GPU, which is the **Host-Device handshake**. Since every major AI framework (PyTorch, TensorFlow) ultimately communicates with the GPU via **CUDA drivers**, we can intercept those communications regardless of the high-level framework used.
 
