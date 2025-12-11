@@ -45,3 +45,5 @@ Here is a process that has worked well for me, feel free to adapt and change it 
 
 
 And that’s all! Reviews should be fun and rewarding, and as with everything we are all learning, so we’ll get better at this with time. Happy reviewing!
+
+Edit (Dec 2025): For other great reading on why code reviews are important, check out https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html
