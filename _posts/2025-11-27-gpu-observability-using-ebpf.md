@@ -9,8 +9,8 @@ If you're deploying Language/Vision models today, you know that GPUs are the mos
 
 As an engineer working on observability, I realized we had a critical gap. We're investing billions in hardware, but our tooling forces us into two camps:
 
-1.  **Hardware Metrics (The Health Check):** Tools like DCGM give us utilization, temperature, and power consumption. Essential data, but it only answers: "Is the chip alive and running hot?" It tells us nothing about *application logic* or *efficiency*.
-2.  **Heavy Profilers (The Microscopic View):** Tools like PyTorch profiler and Nvidia Nsight Systems are powerful and give us deep traces, but they require code changes, introduce significant overhead, and generate massive files. They are too heavy to run continuously in a production cluster.
+1.  **Hardware Metrics:** Tools like DCGM give us utilization, temperature, and power consumption. Essential data, but it only answers: "Is the chip alive and running hot?" It tells us nothing about *application logic* or *efficiency*.
+2.  **Heavy Profilers:** Tools like PyTorch profiler and Nvidia Nsight Systems are powerful and give us deep traces, but they require code changes, introduce significant overhead, and generate massive files. They are too heavy to run continuously in a production cluster.
 
 We needed a solution that offered application-level observability with zero code changes and minimal performance impact.
 
@@ -26,7 +26,7 @@ Using **Grafana Beyla**, our open-source auto-instrumentation tool, we harness e
 
 We target the most critical functions in the CUDA Runtime API to derive meaningful metrics. This allows us to map the application's intent directly to GPU workload execution.
 
-#### `cudaLaunchKernel` (The Computation Trigger)
+#### `cudaLaunchKernel`
 
 We attach our probes here to capture the initiation of parallel computation. This function is executed on the **Host** (CPU) and initiates the kernel on the **Device** (GPU).
 
@@ -35,7 +35,7 @@ Tracking this function allows us to precisely capture:
 * **Execution Configuration:** We capture the **Grid Dimensions** (total thread blocks) and **Block Dimensions** (threads per block), which are critical for assessing if the kernel is properly utilizing the hardware.
 * **Asynchronous Behavior:** We observe the function's fast, **asynchronous** return, which allows the CPU to queue up subsequent work while the GPU computes in parallel.
 
-#### `cudaMemcpy` (The Data Mover)
+#### `cudaMemcpy`
 
 This function governs explicit data movement across the high-latency PCIe bus. This is often the primary bottleneck in accelerated computing.
 
@@ -51,15 +51,13 @@ Monitoring the total bandwidth and frequency of these transfers is the key to id
 
 To show the immediate value of these metrics, we compared a standard workload against one optimized using **Kernel Fusion**—a technique where multiple small operations are combined into one larger, more efficient kernel.
 
-The results were dramatic:
-
 | Metric | Unoptimized Workload | Optimized Workload (Kernel Fusion) | Insight |
 | :--- | :--- | :--- | :--- |
 | **Kernel Launch Frequency** | Extremely High | Massive reduction (5x–10x less) | CPU spends less time managing micro-tasks. |
 | **Grid Dimensions (Size)** | Small, fragmented | Large, maximized | Indicates the kernel is properly saturating the GPU. |
 | **GPU Utilization** | ~60%–70% | Consistent **100%** | We verified the optimization delivered full hardware efficiency. |
 
-This proves that zero-code, **eBPF-based instrumentation** provides the essential, high-fidelity metrics needed to move GPU programming past guesswork and into structured, data-driven optimization.
+These metrics were derived using eBPF monitoring and shows the potential of this method in moving GPU programming past guesswork and into structured, data-driven optimization.
 
 ### The Next Frontier
 
@@ -68,7 +66,8 @@ Our goal is to make Machine Learning infrastructure as reliable and transparent 
 * **Accurate Cost Attribution:** Directly linking specific code paths or features to concrete GPU utilization and runtime costs.
 
 
-[**Watch the full presentation here**](https://www.youtube.com/watch?v=eEBAFyLB9Zg)
+> Note: This blog is a text version of my talk at KubeCON India (Hyderabad) 2025. You can [**watch the full presentation here**](https://www.youtube.com/watch?v=eEBAFyLB9Zg).
 
+![KubeCON India 2025](../../images/gpu-observability-kubecon.jpg)
 
-_First draft written by Gemini 3 Pro by summarizing the above video_.
+_Also, the first draft for this blog was written by Gemini 3 Pro by summarizing the presentation video_.
