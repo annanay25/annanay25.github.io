@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Document search using Claude and an inverted index.
-thumbnail: /images/
+thumbnail: /images/claude-inverted-index.png
 categories: tech
 ---
 
