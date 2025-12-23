@@ -98,6 +98,30 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+th {
+  background-color: $lightGray;
+  font-weight: bold;
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid darken($lightGray, 10%);
+}
+
+td {
+  padding: 10px 15px;
+  border: 1px solid $lightGray;
+}
+
+tr:nth-child(even) {
+  background-color: lighten($lightGray, 5%);
+}
+
 em, i {
   font-style: italic;
 }
@@ -110,7 +134,12 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
+  max-width: 800px;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -316,11 +345,37 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    border-left: 3px solid $gray;
+    padding: 0.5em 1.5em;
+    color: darken($gray, 10%);
+    font-size: 17px;
     font-style: italic;
+    background-color: lighten($lightGray, 3%);
+  }
+
+  pre, code {
+    font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-size: 14px;
+  }
+
+  pre {
+    padding: 16px;
+    margin: 20px 0;
+    overflow-x: auto;
+    border-radius: 4px;
+    border: 1px solid $lightGray;
+  }
+
+  code {
+    padding: 2px 6px;
+    background-color: lighten($lightGray, 3%);
+    border-radius: 3px;
+  }
+
+  pre code {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
   }
 
   .comments {

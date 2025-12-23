@@ -36,29 +36,7 @@ The LLM generates both obvious combinations ('mrna' + 'vaccine') and creative va
 3. The retrieved documents were then ranked using BM25.
 
 
-
-```
-                                 ┌─────────────────────────────────────────┐                                                                 
-                                 │                                         │                                                                 
-                                 │                                         │                                                                 
-                                 │           Query sets created            │             ┌───────────────────┐                               
-┌───────────────────┐            │               by the LLM                │             │                   │           ┌──────────────────┐
-│                   │            │                                         │             │     Retreival     │           │ Results ranked   │
-│    User Query     │            │   Set 1: ['immunity', 'reinfection']    │             │       using       │           │                  │
-│                   ├─────────►  │                                         ├────────────►│   inverted index  ├─────────► │                  │
-│ "immune response  │            │   Set 2: ['antobodies', 'protection']   │             │                   │           │  Top 25 docs     │
-│    after COVID"   │            │                                         │             │                   │           │  ranked by BM25  │
-│                   │            │   Set 3: ['covalsecent', 'response']    │             │ 'AND' within set  │           └──────────────────┘
-└───────────────────┘            │                                         │             │                   │                               
-                                 │                 .                       │             │ 'OR' between sets │                               
-                                 │                                         │             │                   │                               
-                                 │                 .                       │             └───────────────────┘                               
-                                 │                                         │                                                                 
-                                 │   Set 10: ....                          │                                                                 
-                                 │                                         │                                                                 
-                                 └─────────────────────────────────────────┘                                                                 
-                                                     ~4s                                        ~0.01s                          ~0.01s
-```
+![Workflow](../../images/claude-inverted-index.png)
 
 This gives us the semantic understanding of an LLM combined with the speed of traditional search. The LLM has a reasonable understanding of the user intent and can generate diverse query sets. 
 
@@ -99,26 +77,24 @@ We'll look at 4 result sets
 I ran the benchmark using the `sentence-transformers/all-mpnet-base-v2` embedding model for docs and queries (a 768-dimensional dense embedding model).
 Note that it took a few mins to first generate embeddings for all documents in the dataset.
 
-```
-Metric               mpnet-base-v2 baseline
-NDCG@10              0.4725
-Recall@1000          0.3281
-MAP@1000             0.1331
-MRR@10               0.7244
-```
+| Metric | mpnet-base-v2 baseline |
+|--------|------------------------|
+| NDCG@10 | 0.4725 |
+| Recall@1000 | 0.3281 |
+| MAP@1000 | 0.1331 |
+| MRR@10 | 0.7244 |
 
 ### LLM based search using Qwen 2.5 14b model
 
 
 Qwen 2.5:14b running on-prem to see if the approach works with smaller, locally-hosted models:
 
-```
-Metric               Qwen 2.5:14b     mpnet-base-v2 baseline    Difference
-NDCG@10              0.407            0.4725                    -13.9%
-Recall@1000          0.235            0.3281                    -28.3%
-MAP@1000             0.076            0.1331                    -43.9%
-MRR@10               0.626            0.7244                    -13.6%
-```
+| Metric | Qwen 2.5:14b | mpnet-base-v2 baseline | Difference |
+|--------|--------------|------------------------|------------|
+| NDCG@10 | 0.407 | 0.4725 | -13.9% |
+| Recall@1000 | 0.235 | 0.3281 | -28.3% |
+| MAP@1000 | 0.076 | 0.1331 | -43.9% |
+| MRR@10 | 0.626 | 0.7244 | -13.6% |
 
 Hmm, the results are not great - also I'm running the `qwen-2.5:14b` model on my local machine (Macbook M4 Pro 24GB) and the latency for each query set generation is about 8s. Not great.
 
@@ -127,13 +103,12 @@ Hmm, the results are not great - also I'm running the `qwen-2.5:14b` model on my
 
 I had to run this benchmark 5 times because the results were reasonable and I didn't believe it:
 
-```
-Metric               Claude Sonnet 4.5          mpnet-base-v2 baseline      Difference
-NDCG@10              0.484 ± 0.019              0.4725                      +2.4%
-Recall@1000          0.301 ± 0.004              0.3281                      -8.3%
-MAP@1000             0.120 ± 0.003              0.1331                      -10.0%
-MRR@10               0.714 ± 0.007              0.7244                      -1.4%
-```
+| Metric | Claude Sonnet 4.5 | mpnet-base-v2 baseline | Difference |
+|--------|-------------------|------------------------|------------|
+| NDCG@10 | 0.484 ± 0.019 | 0.4725 | +2.4% |
+| Recall@1000 | 0.301 ± 0.004 | 0.3281 | -8.3% |
+| MAP@1000 | 0.120 ± 0.003 | 0.1331 | -10.0% |
+| MRR@10 | 0.714 ± 0.007 | 0.7244 | -1.4% |
 
 **NDCG@10 is 2.4% higher than the vector baseline**, and **MRR@10 is within 1.4%**. For the top-ranked results (what users actually see), the inverted index approach performs remarkably close to the vector baseline. It was also surprising to see a relatively lower standard deviation which showed the approach was relatively stable between runs.
 
@@ -152,13 +127,12 @@ This resulted in query sets like the following
 
 These were the results with this approach (single run)
 
-```
-Metric               Sonnet 4.5 (bigrams)      mpnet-base-v2 baseline    Diff      
-NDCG@10              0.5233                    0.4725                    +0.0508 (+10.8%)
-Recall@1000          0.2992                    0.3281                    -0.0289 (-8.8%)
-MAP@1000             0.1229                    0.1331                    -0.0102 (-7.7%)
-MRR@10               0.7910                    0.7244                    +0.0666 (+9.2%)
-```
+| Metric | Sonnet 4.5 (bigrams) | mpnet-base-v2 baseline | Diff |
+|--------|----------------------|------------------------|------|
+| NDCG@10 | 0.5233 | 0.4725 | +0.0508 (+10.8%) |
+| Recall@1000 | 0.2992 | 0.3281 | -0.0289 (-8.8%) |
+| MAP@1000 | 0.1229 | 0.1331 | -0.0102 (-7.7%) |
+| MRR@10 | 0.7910 | 0.7244 | +0.0666 (+9.2%) |
 
 So recall didn't improve much, instead it might've gone down a bit. NDCG and MRR did go up a little bit which makes sense.
 
