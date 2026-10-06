@@ -51,9 +51,9 @@ Last week, one of my colleagues noticed that these entity resolutions, which usu
 
 So I did the obvious thing and added an index for these properties before rolling it out to our dev, ops, and prod clusters.
 
-![Database CPU usage dropping after the index rollout, with the customer name blurred in the query and legend.](/images/redis-codex/cpu-after-index-redacted.png)
+![Database CPU usage dropping after the index rollout.](/images/redis-codex/cpu-after-index-redacted.png)
 
-*Database CPU usage dropping after the index rollout, with the customer name blurred in the query and legend.*
+*Database CPU usage dropping after the index rollout.*
 {: style="text-align: center;"}
 
 ## Then the replica divergence alert fired
