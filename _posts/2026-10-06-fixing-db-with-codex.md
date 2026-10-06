@@ -66,7 +66,7 @@ While we reported this upstream to the database team, my job was to repair the a
 
 ## $150 in Codex credits later
 
-With about $150 in credits, Codex with Astra Medium helped scan those 27 clusters and repair affected instances. Adding up one full scan pass per cluster gives **365,808 index-property checks across primary and replica members**, excluding extra repeat checks. Each check compared the result of an indexed query with an equivalent forced label scan. On the first repaired cluster alone, fresh checks found 45 failing property/member comparisons across three database instances**. After repair, **18,210 comparisons across all 15 members found zero gaps**.
+With about $150 in credits, Codex with Astra Medium helped scan those 27 clusters and repair affected instances. Adding up one full scan pass per cluster gives **365,808 index-property checks across primary and replica members**, excluding extra repeat checks. Each check compared the result of an indexed query with an equivalent forced label scan. On the first repaired cluster alone, fresh checks found 45 failing property/member comparisons across three database instances. After repair, **18,210 comparisons across all 15 members found zero gaps**.
 
 Now, if you're wondering why all of this couldn't have been done with a single script: each cluster had a different number of database deployments, failure modes and ways of accessing it (timed-access, etc). Codex was flexible in ways that would have required a much more complex Bash script.
 
