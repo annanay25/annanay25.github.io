@@ -13,5 +13,11 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
+  {% if page.thumbnail_credit %}
+  <p class="thumbnail-credit">
+    Thumbnail: {% include thumbnail-credit.html credit=page.thumbnail_credit %}
+  </p>
+  {% endif %}
+
   {% include disqus.html %}
 </article>

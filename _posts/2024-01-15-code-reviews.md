@@ -1,5 +1,12 @@
 ---
 layout: post
+thumbnail: /images/thumbnails/code-reviews.jpg
+thumbnail_alt: A close-up of source code in a laptop editor
+thumbnail_credit:
+  name: Marc Mueller
+  author_url: https://unsplash.com/@seven11nash
+  source: Wikimedia Commons
+  source_url: https://commons.wikimedia.org/wiki/File:Macro_laptop_coding_(Unsplash).jpg
 title: My process for code review
 categories: tech
 ---

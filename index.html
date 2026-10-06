@@ -4,12 +4,20 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    {% assign thumbnail_path = post.thumbnail | default: '/images/jekyll-logo.png' %}
     <article class="post">
-      <div class="post-preview">
-        <div class="post-thumbnail">
-          <img src="{{ thumbnail_path | relative_url }}" alt="{{ post.title | escape }} thumbnail">
-        </div>
+      <div class="post-preview{% unless post.thumbnail %} post-preview-text-only{% endunless %}">
+        {% if post.thumbnail %}
+        <figure class="post-thumbnail">
+          <div class="post-thumbnail-image">
+            <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.thumbnail_alt | default: post.title | escape }}" loading="lazy">
+          </div>
+          {% if post.thumbnail_credit %}
+          <figcaption class="thumbnail-credit">
+            {% include thumbnail-credit.html credit=post.thumbnail_credit %}
+          </figcaption>
+          {% endif %}
+        </figure>
+        {% endif %}
         <div class="post-details">
           <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 

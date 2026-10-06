@@ -1,5 +1,12 @@
 ---
 layout: post
+thumbnail: /images/thumbnails/docker-compose.jpg
+thumbnail_alt: Colorful shipping containers stacked in rows
+thumbnail_credit:
+  name: Adem Percem
+  author_url: https://unsplash.com/@adempercem
+  source: Unsplash
+  source_url: https://unsplash.com/photos/stacked-shipping-containers-in-various-colors-gd8PLJiRTZk
 title: Running Docker Compose with Multiple Profiles
 categories: tech
 ---

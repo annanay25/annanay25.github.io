@@ -1,5 +1,12 @@
 ---
 layout: post
+thumbnail: /images/thumbnails/neural-networks.jpg
+thumbnail_alt: Milk being poured into a cup of coffee
+thumbnail_credit:
+  name: Nathan Dumlao
+  author_url: https://unsplash.com/@nate_dumlao
+  source: Unsplash
+  source_url: https://unsplash.com/photos/milk-pouring-on-coffee-R44u2AMWsv4
 title: Ideas from a caffienated neural network.
 categories: tech
 ---

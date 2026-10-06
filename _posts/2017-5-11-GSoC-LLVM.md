@@ -1,5 +1,12 @@
 ---
 layout: post
+thumbnail: /images/thumbnails/llvm-gsoc.jpg
+thumbnail_alt: Triangular beams forming a geometric glass dome
+thumbnail_credit:
+  name: John M
+  author_url: https://unsplash.com/@johnthetaco
+  source: Wikimedia Commons
+  source_url: https://commons.wikimedia.org/wiki/File:Triangles_in_a_glass_dome_(Unsplash).jpg
 title: Google Summer of Code with LLVM.
 ---
 

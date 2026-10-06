@@ -1,5 +1,12 @@
 ---
 layout: post
+thumbnail: /images/thumbnails/career-progression.jpg
+thumbnail_alt: A staircase ascending through a light-filled modern building
+thumbnail_credit:
+  name: Patrick Langwallner
+  author_url: https://unsplash.com/@patresinger
+  source: Unsplash
+  source_url: https://unsplash.com/photos/a-set-of-stairs-leading-up-to-a-building-GnFsr6lq-zo
 title: Career Progression in a Tech Company
 categories: tech
 ---
